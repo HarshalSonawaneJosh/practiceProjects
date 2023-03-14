@@ -1,0 +1,29 @@
+##channel name- Code step by step
+##react-redux-saga
+steps to make app-
+store --> index.js --> actions --> reducer
+
+//actions are used to send the data from reactJs to redux.
+1.create store which take reducer as a input and store which is wrapped over our application in index .js
+using Provider(used for connecting redux and reactjs).
+//notes in comments : Actions are not function but objects. Action creators are factory functions which  always returns action object with "type" property in it.
+
+//when we create button in react and we click on them after called the action.
+//Whenever we want to pass the data from ReactJs to redux we called to Actions(react mdhun redux la data pathvaycha asel tr action call krto).
+then reducer la jato ani reducer data store madhye thevto.
+//to called the action we used useDispatch hook.action ch kay kaam ast reactJs ne data gheun reducer la pathavto.
+//then action ne reducer la data jato ani reducer store la data store krto.
+//reducer always contain a return statement otherwise it will throws an error and also contain initial data/state.
+//action reducer store chya through connect hotat direct.
+//redux madhun data fetch kinva anaycha asel react madhye tr useSelector hook use krto.
+//  const result = useSelector((state)=>state.);  //by using this useSelector we are able to fetch all redux data and if we want to use particuler reducer data then use state.(reducer name) which is presents in the root reducer file.
+//how to install redux toolit -> npm i @reduxjs/toolkit
+//async operation krto tevha result return vhayla pahijel mhnun aapan * generator function use karto.and yeild tyachyat OR async operation handle karayche astil tr apn generator functions use krto.
+//store madhye saga la connect krto.
+
+//For Saga-->
+    Call saga function from Action.
+    Make function in Saga for API.
+    Send result form Saga to Action.
+    Pass data to Reducer.
+    Get data in Main Component.

@@ -1,0 +1,22 @@
+{
+  "blogs": [
+    {
+      "title": "My First Blog",
+      "body": "Why do we use it?\nIt is a long established fact that a render will be distracted by the readable content of a page when looking at its layout",
+      "author": "mario",
+      "id": 1
+    },
+    {
+      "title": "Opening Party",
+      "body": "Why do we use it?\nIt is a long established fact that a render will be distracted by the readable content of a page when looking at its layout",
+      "author": "yoshi",
+      "id": 2
+    },
+    {
+      "title": "harshal",
+      "body": "sonawane's blog",
+      "author": "yoshi",
+      "id": 3
+    }
+  ]
+}

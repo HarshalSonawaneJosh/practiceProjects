@@ -1,0 +1,293 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+/* header style */
+.header {
+  background-color: orange;
+  height: 100px;
+}
+.cart-div {
+  float: right;
+  margin: 25px;
+  position: relative;
+}
+.cart-div img {
+  width: 30px;
+}
+.cart-div span {
+  position: absolute;
+  z-index: 5;
+  background-color: green;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  color: #fff;
+  top: -10px;
+  right: 0;
+}
+/* header style */
+
+/* Product-container UI*/
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 65px;
+}
+.product-item {
+  border: 1px solid #ccc;
+  margin: 20px;
+  padding: 20px;
+}
+/* Product-container UI end */
+
+/* logo */
+.logo {
+  float: left;
+  margin-left: 0px;
+  padding: 20px;
+}
+/* logo end */
+
+/* cart-page-container */
+.cart-page-container {
+  display: flex;
+  margin: 30px;
+  padding: 30px;
+}
+.cart-page-container table {
+  flex: 65%;
+  border-collapse: collapse; /* this property is used to merge the border if it is saparated from each other */
+}
+.cart-page-container td {
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+/* cart-page-container end */
+
+/*price-details */
+.price-details {
+  flex: 35%;
+  margin: 0px 30px;
+}
+
+.price-details .adjust-price {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.price-details .adjust-price span {
+  font-size: 20px;
+}
+.product-list {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  /* margin-inline-start: 0px; */
+  /* margin-inline-end: 0px; */
+  /* font-weight: bold; */
+}
+
+.search-box {
+  float: left;
+  padding: 25px;
+  width: 50%;
+}
+.search-box input {
+  width: 50%;
+  height: 30px;
+  border: 1px solid #777;
+  padding-left: 10px;
+}
+/* price-details end*/
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* CSS */
+.button-27 {
+  /* appearance: none */
+  border: 2px solid #1a1a1a;
+  background-color: #000000;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  /* width: 100%; */
+  will-change: transform;
+  margin-left: 1300px;
+}
+
+.button-27:disabled {
+  pointer-events: none;
+}
+
+.button-27:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-27:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+/* CSS ->add-to-cart*/
+.add-to-cart {
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 5px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.add-to-cart:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.add-to-cart:hover {
+  background-color: #2c974b;
+}
+
+.add-to-cart:focus {
+  box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
+  outline: none;
+}
+
+.add-to-cart:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: default;
+}
+
+.add-to-cart:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
+}
+/* add-to-cart end */
+
+/* remove-to-cart */
+.remove-to-cart {
+  appearance: none;
+  background-color: red;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  /* margin: 10px; */
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.remove-to-cart:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.remove-to-cart:hover {
+  background-color: red;
+}
+
+.remove-to-cart:focus {
+  box-shadow: rgba(164, 52, 46, 0.4) 0 0 0 3px;
+  outline: none;
+}
+
+.remove-to-cart:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: default;
+}
+
+.remove-to-cart:active {
+  background-color: red;
+  box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
+}
+/* remove-to-cart end */
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
