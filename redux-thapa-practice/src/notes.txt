@@ -1,0 +1,7 @@
+1.actions -> index -> action creator -> export
+2.reducer->updown(logic)
+3.reducer/index ->combine reducer is a object ,and reducer is a also object
+4.store -> export kr
+5.index.js->import store
+6.using provide we can connect our redux or react. //or Instead of using consumer we used in redux that is called useSelector.
+7.getting data from store in app.js using useSelector and useDispatch.
